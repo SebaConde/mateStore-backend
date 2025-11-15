@@ -38,16 +38,6 @@
     "price": {
       "type": "decimal"
     },
-    "tipo": {
-      "type": "enumeration",
-      "enum": [
-        "Calabaza",
-        "Madera",
-        "Acero",
-        "Silicona",
-        "Imperial"
-      ]
-    },
     "isFeatured": {
       "type": "boolean"
     },
@@ -55,6 +45,16 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::category.category"
+    },
+    "tipo": {
+      "type": "enumeration",
+      "enum": [
+        "torpedo",
+        "imperial",
+        "camionero",
+        "calabaza",
+        "madera"
+      ]
     }
   }
 }

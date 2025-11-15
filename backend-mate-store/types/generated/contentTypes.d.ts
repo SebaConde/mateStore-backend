@@ -493,7 +493,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'productName'>;
     tipo: Schema.Attribute.Enumeration<
-      ['Calabaza', 'Madera', 'Acero', 'Silicona', 'Imperial']
+      ['torpedo', 'imperial', 'camionero', 'calabaza', 'madera']
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
